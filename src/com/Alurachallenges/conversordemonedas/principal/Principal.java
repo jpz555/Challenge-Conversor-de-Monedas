@@ -12,7 +12,7 @@ import java.util.*;
 
 public class Principal {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         System.out.println("*******    Bienvenido/a al Conversor de monedas.  **********");
         Scanner entradaUsuario = new Scanner(System.in);
         ConvertirMoneda conversor = new ConvertirMoneda();
@@ -50,7 +50,7 @@ public class Principal {
                     double cantidad = entradaUsuario.nextDouble();
                     String monedaBase = datoMoneda.obtenerFormatos(opcion, 0);
                     String monedaDestino = datoMoneda.obtenerFormatos(opcion, 1);
-                    Moneda moneda = conversor.convertirMoneda(monedaBase, monedaDestino, cantidad);
+                    Moneda moneda = conversor.convertirMoneda(monedaBase, monedaDestino,cantidad);
                     String conversion = new Mensaje(cantidad, moneda).toString();
 //                   String conversion = new Mensaje(cantidad).mostrarMensajeConversion(cantidad, moneda);
                     System.out.println(conversion);
