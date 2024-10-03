@@ -16,7 +16,8 @@ public class ConvertirMoneda {
     private String apiKey;
 
     public Moneda convertirMoneda(String monedaBase, String monedaDestino, Double cantidad) throws InterruptedException {
-        this.apiKey = "625f47a7dafbf9e4a8758741";
+        this.apiKey = System.getenv("API_KEY");
+//        this.apiKey = "625f47a7dafbf9e4a8758741";
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/"+apiKey
                 + "/pair/" +monedaBase+ "/" + monedaDestino + "/" + BigDecimal.valueOf(cantidad).setScale(2, RoundingMode.HALF_UP));
 
