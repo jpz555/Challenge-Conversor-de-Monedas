@@ -84,7 +84,7 @@ Despues de estos pasos, volvera a iniciar el menu principal y seguir solicitando
 
 ### 5. Ejemplo de uso de la aplicación <a id="ej"></a>
 ---
-A contitnuación se muestra un ejemplo del uso de la aplicación.
+A continuación se muestra un ejemplo del uso de la aplicación.
 
 ![gif de aplicación](images/Gif-Aplicacion.gif)
 
